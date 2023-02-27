@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ .container{
+    display: grid;
+    grid-template-rows: 8rem 40rem 40rem 100rem 10rem;
+    width: 100%;
+
+}
+.header{
+    display: flex;
+    flex-direction:row;
+    justify-content: center ;
+    gap: 10%;
+    background-color: rgb(215, 172, 41);
+    font-size: 2rem;   
+    width: 100%;
+}
+
+.logo{
+    flex-grow: 2;
+    background-image: url('images/Logo.png');
+    background-repeat: no-repeat;
+    position: relative;
+   left: 8rem;
+    top: 1.1rem;
+    height: 9rem;
+}
+.menu{
+    flex-grow: 3;
+    display: flex;
+    flex-direction:row;
+    justify-content: right;
+    align-items: center;
+    gap: 5%;
+    text-align: right;
+    
+}
+.colorOrange{
+    color: rgb(239, 142, 14);
+ }
+
+ 
+
+ .bannier{
+    display: flex;
+    flex-direction:row;
+     align-items: center;
+    justify-content: center ;
+    left: 10px; 
+   
+}
+.imgbaniere{
+    background-image: url('images/baniere.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    block-size: 40rem;
+    z-index: -1;
+    position: relative;
+    top: 5rem;
+    padding-bottom: 25rem;
+    width: 100%;
+}
+.text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    block-size: 50%;
+    top: 1%;
+    gap: 10%;
+    font-family: Arial, Helvetica, sans-serif  
+}
+.foof{
+    font-size: 2rem;
+    margin-top: 20%;
+}
+.police{
+    font-size: 3rem;
+}
+.down{
+    font-size: 2rem;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    block-size: 70%;
+    font-size: 150%;
+}
+.play{
+    background-color: red;
+    border-radius: 40rem;
+    border:0.1rem solid red;
+     padding: 1rem;
+     margin-right: 1rem;
+}
+.app{
+    border-radius: 40rem;
+    border: 0.1rem solid white;
+    padding: 1rem;
+}
+
+.call_box{
+   
+    position: relative;
+}
+
+.telephone2{
+    background-image: url('images/2telephones.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    block-size: 40rem; 
+   position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-45%);
+   width: 30%;
+}
+
+.trait{
+    width: 60%;
+    height: 0.1rem;
+    background-color: gray;
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+.text2{
+    font-size: 2rem;
+   margin-top: 5rem;
+   margin-left: 40rem; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+.partie3{
+    block-size: 45%;
+    display: flex;
+    position: relative;
+}
+.telephone1{
+    background-image: url('images/RectangleImg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    block-size: 40rem; 
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 30%;
+}
+.text3{
+    position: absolute;
+    top: 60%;
+    left:80%;
+    transform: translateX(-40%);
+    
+}
+.partie4{
+    block-size: 45%;
+    display: flex;
+    position: relative;
+    
+}
+.variete{
+    position: absolute;
+    transform: translateX(-60%);
+    top: 40%;
+    left: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    gap: 5rem;
+}
+ 
+telephone3{
+    background-image: url('images/RectangleImg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    block-size: 40rem; 
+    width: 30%;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+   position: relative; 
+}
+.logo1{
+    background-image: url('images/Logo.png');  
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 10rem;
+    width: 10rem;
+    left: 8rem;
+    top: 3rem;
+    height: 5rem;
+    bottom: 10rem;
+}
+.reseau{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    position: relative;
+}
+.logoTwitter{
+    background-image: url('images/Vector (1).png');  
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 5rem;
+    width: 10rem;
+    left: 25rem;
+    top: 3rem;
+    height: 5rem;
+    bottom: 10rem;
+}
+.logoFes{
+    background-image: url('images/Vector.png');  
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10rem;
+    left: 35rem;
+    top: 4rem;
+   height: 5rem;
+   bottom: 10rem;
+}
+.logoIns{
+    background-image: url('images/instagramicone.png');  
+    background-repeat: no-repeat;
+    position: relative;
+    left: 45rem;
+    top: 4rem;
+   height: 5rem;
+}
+.copywrite{
+    position: relative;
+    left: 55rem;
+    top: 1rem;
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .container{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+        .menu{
+            display: none;
+        }  
+}
+@media screen and (max-width: 768px){
+    .imgbaniere{
+        background-image: none;
+    }
+    .text{
+        color: black;
+    }
+    .play{
+        color: white;
+    }
+    .app{
+        border: 0.1rem solid red;
+        color: red;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        block-size: 70%;
+        font-size: 150%;
+        gap: 2rem;
+    }
+    .text2{
+        background-color: blue;
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-left: 15rem;
+       margin-bottom: 150rem;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   .trait{
+    border: 0.2rem solid rgb(102, 99, 99);
+    background-color: aqua;
+   
+    }
+    .telephone{
+        display: flex;
+        flex-direction:column;
+        background-color: lightblue;
+    }
+    .telephone1{
+        background-image: url('images/RectangleImg2.png');
+        background-repeat: no-repeat;
+        background-size: 60rem;
+        block-size: 80rem; 
+        padding: 25rem;
+        margin-left: 5rem;
+        margin-top: 50rem;
+        margin-bottom: 130rem;
+    }
+}
+
+.footer{
+   background-color: blueviolet;
+}
